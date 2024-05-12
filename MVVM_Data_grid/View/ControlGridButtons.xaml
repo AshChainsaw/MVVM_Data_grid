@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="MVVM_Data_grid.View.ControlGridButtons"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MVVM_Data_grid.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <StackPanel Orientation="Horizontal" >
+        <Button Style="{StaticResource BtnStyle}" Content="Dodaj"
+         Command="{Binding AddCommand}"/>
+        <Button Content="Usun" Style="{StaticResource BtnStyle1}"
+         Command="{Binding DeleteCommand}"/>
+        <Button Style="{StaticResource BtnStyle3}" Content="Góra"  
+         Command="{Binding UpCommand}"/>
+        <Button Content="Dół" Style="{StaticResource BtnStyle3}" 
+        Command="{Binding DownCommand}"/>
+        <Button  Style="{StaticResource BtnStyle2}" Content="Wstaw"  
+         Command="{Binding InsertCommand}"/>
+        <Button  Style="{StaticResource BtnStyle3}" Content="Czyść Liste"  
+         Command="{Binding ClearCommand}"/>
+        <Button  Style="{StaticResource BtnStyle5}" Content="Serializacja"  
+         Command="{Binding SerializeCommand}"/>
+        
+
+    </StackPanel>
+</UserControl>
